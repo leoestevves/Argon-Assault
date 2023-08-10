@@ -38,7 +38,7 @@ public class PlayerControls : MonoBehaviour
         //transform.localRotation = Quaternion.Euler(pitch, yaw, roll); //Forma mais efetiva de fazer a rotação
 
         //Deixa a rotação mais suave
-        Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
+        Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);  //Forma mais efetiva de fazer a rotação
         transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationFactor);
 
 
