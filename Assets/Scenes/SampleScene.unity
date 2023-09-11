@@ -1334,6 +1334,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1105058782586676336, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105058782586676336, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 4062684716842858739}
+    - target: {fileID: 1105058782586676336, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 4062684716842858738}
+    - target: {fileID: 4062684717227087234, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
+      propertyPath: field of view
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 4062684717552097600, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1382,5 +1398,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 6044828496007381430, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
+--- !u!1 &4062684716842858738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 154602486259649203, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
+  m_PrefabInstance: {fileID: 4062684716842858737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4062684716842858739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7526663375998360093, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
+  m_PrefabInstance: {fileID: 4062684716842858737}
+  m_PrefabAsset: {fileID: 0}

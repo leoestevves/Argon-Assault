@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float controlSpeed = 25f;
     [SerializeField] float xRange = 9f;
     [SerializeField] float yMinRange = -3f;
-    [SerializeField] float yMaxRange = 10.5f;
+    [SerializeField] float yMaxRange = 10.5f;    
 
     [Header("Rotation")]
     [SerializeField] float positionPitchFactor = -2f;
@@ -17,7 +18,10 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float controlRollFactor = -20f;
 
     [SerializeField] float rotationFactor = 1f;
-    
+
+    [Header("Lasers")]
+    [SerializeField] GameObject[] lasers;
+
     float xThrow, yThrow;
 
     void Update()
@@ -41,9 +45,6 @@ public class PlayerControls : MonoBehaviour
         //Deixa a rotação mais suave
         Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);  //Forma mais efetiva de fazer a rotação
         transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationFactor);
-
-
-
     }
 
     void ProcessTranslation()
@@ -66,11 +67,21 @@ public class PlayerControls : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            Debug.Log("I'm shooting");            
+            SetLasersActive(true);            
         }
         else
         {
-            Debug.Log("Not shooting");
+            SetLasersActive(false);
         }
     }
+
+    void SetLasersActive(bool isActive)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
+    }
+
 }
