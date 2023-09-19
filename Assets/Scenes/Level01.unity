@@ -702,6 +702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5745157495610010061, guid: d79cf98f90694a9478579ba0dd771c2e, type: 3}
   parent: {fileID: 1965290237}
+  scorePerHit: 15
 --- !u!136 &608984827
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -983,6 +984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5745157495610010061, guid: d79cf98f90694a9478579ba0dd771c2e, type: 3}
   parent: {fileID: 1965290237}
+  scorePerHit: 15
 --- !u!136 &750757252
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1365,6 +1367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5745157495610010061, guid: d79cf98f90694a9478579ba0dd771c2e, type: 3}
   parent: {fileID: 1965290237}
+  scorePerHit: 15
 --- !u!1001 &1114779733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1502,6 +1505,50 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4062684717552097603, guid: 38d7acc2fa1c61b4bacd823ae998fb06, type: 3}
   m_PrefabInstance: {fileID: 4062684716842858737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1620043080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1620043082}
+  - component: {fileID: 1620043081}
+  m_Layer: 0
+  m_Name: ScoreBoard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1620043081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620043080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e681ad8cb58d184a863c1d5bf5aafe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1620043082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620043080}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 391.8345, y: -247.13876, z: 656.9256}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1840093956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1709,6 +1756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5745157495610010061, guid: d79cf98f90694a9478579ba0dd771c2e, type: 3}
   parent: {fileID: 1965290237}
+  scorePerHit: 15
 --- !u!1 &1965290236
 GameObject:
   m_ObjectHideFlags: 0
