@@ -769,8 +769,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5745157495610010061, guid: d79cf98f90694a9478579ba0dd771c2e, type: 3}
+  hitVFX: {fileID: 5745157495610010061, guid: 66cd504813b2fd3448cdc7c8294dc083, type: 3}
   parent: {fileID: 1965290237}
   scorePerHit: 15
+  hitPoints: 10
 --- !u!136 &608984827
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -842,14 +844,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608984825}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 240.3, y: 40.66, z: 357.34}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 261.77, y: 40.66, z: 370.02}
   m_LocalScale: {x: 12.673946, y: 13.0721445, z: 3.4623}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &645141497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1037,7 +1039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &750757251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,8 +1053,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5745157495610010061, guid: d79cf98f90694a9478579ba0dd771c2e, type: 3}
+  hitVFX: {fileID: 5745157495610010061, guid: 66cd504813b2fd3448cdc7c8294dc083, type: 3}
   parent: {fileID: 1965290237}
   scorePerHit: 15
+  hitPoints: 4
 --- !u!136 &750757252
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1434,8 +1438,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5745157495610010061, guid: d79cf98f90694a9478579ba0dd771c2e, type: 3}
+  hitVFX: {fileID: 5745157495610010061, guid: 66cd504813b2fd3448cdc7c8294dc083, type: 3}
   parent: {fileID: 1965290237}
   scorePerHit: 15
+  hitPoints: 10
 --- !u!1001 &1114779733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1779,8 +1785,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 5745157495610010061, guid: d79cf98f90694a9478579ba0dd771c2e, type: 3}
+  hitVFX: {fileID: 5745157495610010061, guid: 66cd504813b2fd3448cdc7c8294dc083, type: 3}
   parent: {fileID: 1965290237}
   scorePerHit: 15
+  hitPoints: 10
 --- !u!4 &1965290237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8427428400063751871, guid: 0ac911077ba19444bbc0ad5be46502c9, type: 3}
